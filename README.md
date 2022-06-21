@@ -4,7 +4,7 @@
 
 - 공통 폼
   - 폰트 : 맑은 고딕
-  - 칼라 : ff7101, RGB(255, 113, 1)
+  - 칼라 : <font color="#FF7101">#FF7101</font>, RGB(255, 113, 1)
   - <img src="https://user-images.githubusercontent.com/93713381/174786498-76d7cb70-0f53-4c7c-8a73-9b958de4694a.png" alt="로고" height="400" width="400"> 
 
 1. ~~화면정의서 만들기(6/21)~~
