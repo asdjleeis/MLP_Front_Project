@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Coding</title>
+    <script src="https://kit.fontawesome.com/a43104c6ec.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="info__id">
+        <input type="text" placeholder="아이디 입력(8~15자)" />
+        <button>중복 확인</button>
+    </div>
+
+
+
+    <div class="box domain">
+        <div class="domain__selected">직접 입력</div>
+        <ul class="domain__list">
+            <li class="option">naver.com</li>
+            <li class="option">google.com</li>
+            ...
+        </ul>
+    </div>
+    <style>
+        .info #info__id {
+            position: relative;
+        }
+
+        #info__id button {
+            position: absolute;
+            width: 90px;
+            height: 40px;
+            top: 0;
+            bottom: 0;
+            right: 5px;
+            margin: auto 0;
+            border-radius: 3px;
+        }
+
+        .domain {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .domain .domain__list {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            margin-top: 4px;
+            box-sizing: border-box;
+            border-radius: 1px;
+            border: 1px solid #d9d6d6;
+            /* 리스트 안 보이게 하기 */
+            overflow: hidden;
+            max-height: 0;
+            opacity: 0;
+            transition: .3s;
+        }
+
+        .domain .domain__list.active {
+            /* 리스트 보이기 */
+            overflow-x: hidden;
+            overflow-y: auto;
+            opacity: 1;
+            max-height: 60px;
+        }
+
+        .domain .domain__list::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .domain .domain__list::-webkit-scrollbar-thumb {
+            background-color: #8d8d8d;
+            border-radius: 2px;
+        }
+
+        .domain .domain__list::-webkit-scrollbar-track {
+            background-color: #ebe9e9;
+            border-radius: 5px;
+        }
+    </style>
+</body>
+
+</html>
