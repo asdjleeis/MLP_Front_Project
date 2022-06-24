@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    list-style: none;
+    font-family: "맑은 고딕";
+    vertical-align: baseline;
+}
+
+
+body {
+    background: #fff;
+
+}
+
+
+/*헤더*/
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8em;
+    line-height: 8em;
+}
+
+header #logo {
+    position: relative;
+    float: left;
+    height: 100%;
+    z-index: 101;
+    margin-left: 2em;
+}
+
+#nav {
+    position: relative;
+    z-index: 100;
+    text-align: center;
+    font-family: "맑은 고딕";
+    background: -webkit-linear-gradient(right, #ff7101, #ecaa2e, #ff7101);
+    font-weight: 1000;
+    height: 100%;
+}
+
+#nav ul {
+    position: relative;
+    z-index: 101;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+    margin: 0 0.5em 0 0.5em;
+
+    -moz-transition: top .15s ease-in-out;
+    -webkit-transition: top .15s ease-in-out;
+    -o-transition: top .15s ease-in-out;
+    -ms-transition: top .15s ease-in-out;
+    transition: top .15s ease-in-out;
+}
+
+#nav li>ul {
+    display: none;
+}
+
+#nav li a {
+    -moz-transition: background-color .075s ease-in-out, color .075s ease-in-out;
+    -webkit-transition: background-color .075s ease-in-out, color .075s ease-in-out;
+    -ms-transition: background-color .075s ease-in-out, color .075s ease-in-out;
+    transition: background-color .075s ease-in-out, color .075s ease-in-out;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    top: -6px;
+    width: 6em;
+    padding: 0.25em 1.5em 0.25em 1.5em;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-size: 15pt;
+    outline: 0;
+}
+
+#nav li:hover a {
+    background: #6eae73;
+}
+
+#nav li.current a {
+    background: #389e41;
+}
+
+.dropotron {
+    list-style: none;
+    background: #77766b;
+    color: #fff;
+    border-radius: 6px;
+    line-height: 2.75em;
+    text-align: center;
+    font-family: '맑은 고딕';
+    font-weight: 700;
+    padding: 1em 0;
+    text-align: left;
+    min-width: 14em;
+    margin-top: -1em;
+    box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.1);
+}
+
+.dropotron li {
+    padding-left: 0;
+}
+
+.dropotron li>a {
+    display: block;
+    color: #D7DAD8;
+    text-decoration: none;
+    padding: 0 1.25em;
+}
+
+.dropotron li:hover>a,
+.dropotron li:hover>span {
+    color: #fff;
+    background: #7B8780;
+}
+
+
+/* 헤더 영역 끝 */
+
+
+/* 배너 */
+#banner {
+    position: relative;
+    background-image: url("images/overlay.png"), url("images/overlay.png"), url("images/banner.jpg");
+    background-position: top left, top left, center center;
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: auto, 50%, cover;
+    z-index: 1;
+    padding: 10em 0;
+}
+
+#banner .content {
+    position: relative;
+    background-color: rgba(21, 28, 23, 0.55);
+    background-image: url("images/overlay.png");
+    background-position: top left, center center;
+    background-size: auto, 100%;
+    background-repeat: repeat, no-repeat;
+    text-align: center;
+    margin: 0;
+    padding: 4em 0 3.5em 0;
+}
+
+#banner .content h2 {
+    color: #fff;
+    font-size: 2.75em;
+    margin: 0 0 0.5em 0;
+}
+
+#banner .content p {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #eeeeee;
+    font-size: 2em;
+    margin: 1.25em 0 1.25em 0;
+}
+
+#banner .content #search {
+    position: relative;
+    text-align: left;
+    width: 25%;
+    border-radius: 50px;
+    border: solid 4px #575d59;
+    border-color: rgba(87, 93, 89, 0.35);
+    ;
+    padding: 1em;
+    font-size: 1em;
+}
+
+#banner .content .button {
+    -moz-transition: border-color .2s ease-in-out, color .2s ease-in-out;
+    -webkit-transition: border-color .2s ease-in-out, color .2s ease-in-out;
+    -ms-transition: border-color .2s ease-in-out, color .2s ease-in-out;
+    transition: border-color .2s ease-in-out, color .2s ease-in-out;
+    color: #eee;
+    background-color: #ff7101;
+    border: solid 4px #575d59;
+    border-color: rgba(87, 93, 89, 0.35);
+    font-size: 1.5em;
+    font-weight: 700;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 2.3em;
+    padding: 0.5em 1em;
+    text-align: center;
+    text-decoration: none;
+}
+
+#banner .content .button:hover {
+    color: #e4e7e5;
+    border-color: rgba(87, 93, 89, 0.75);
+}
+
+#banner .content .button:active {
+    color: #fff;
+    border-color: #616763;
+}
+
+/* 메인페이지 */
+
+#main {
+    background: #fff;
+    border-top: solid 5px #ff7101;
+    border-bottom: solid 5px #c1cac5;
+    border-top-width: 30px;
+    border-bottom-width: 10px;
+    padding: 6em 0 6em 0;
+}
+
+/* 내용 담기는 컨테이너 가로 사이즈 조정 */
+#container {
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+#container h2 {
+    font-size: 3em;
+    padding-bottom: 1em;
+}
+
+/* 개별 내용 컨테이너 조정*/
+#box {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+#box #box-seperate {
+    width: 20%;
+    padding: 40px 0 0 40px;
+    overflow: hidden;
+}
+
+#box-seperate img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+#box-seperate h3 {
+    font-size: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#box-seperate p {
+    font-size: 1.5em;
+}
+
+/* 푸터 */
+
+#footer {
+    padding: 4em 0 4em 0;
+    background-color: #f5f5f5;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer h2.company {
+    text-align: center;
+    font-size: 2em;
+    color: #77766b;
+    margin: 0 0 1.5em 0;
+}
+
+#footer img {
+    float: left;
+    position: relative;
+    width: 10em;
+    left: 1em;
+}
+
+#footer p {
+    font-size: 1.2em;
+    text-align: left;
+    float: left;
+    margin-left: 3%;
+}
+
+#footer h3 {
+    float: right;
+    font-size: 2em;
+    margin-right: 3%;
+}
