@@ -1,134 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    list-style: none;
-    font-family: "맑은 고딕";
-    vertical-align: baseline;
-}
-
-
-body {
-    background: #fff;
-    
-}
-
-
-/*헤더*/
-header {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 8em;
-    line-height: 8em;
-}
-
-header #logo {
-    position: relative;
-    float: left;
-    height: 100%;
-    z-index: 101;
-    margin-left: 2em;
-}
-
-#nav {
-    position: relative;
-    z-index: 100;
-    text-align: center;
-    font-family: "맑은 고딕";
-    background: -webkit-linear-gradient(right, #ff7101, #ecaa2e, #ff7101);
-    font-weight: 1000;
-    height: 100%;
-}
-
-#nav ul {
-    position: relative;
-    z-index: 101;
-}
-
-#nav li {
-    display: inline-block;
-    position: relative;
-    margin: 0 0.5em 0 0.5em;
-
-    -moz-transition: top .15s ease-in-out;
-    -webkit-transition: top .15s ease-in-out;
-    -o-transition: top .15s ease-in-out;
-    -ms-transition: top .15s ease-in-out;
-    transition: top .15s ease-in-out;
-}
-
-#nav li>ul {
-    display: none;
-}
-
-#nav li a {
-    -moz-transition: background-color .075s ease-in-out, color .075s ease-in-out;
-    -webkit-transition: background-color .075s ease-in-out, color .075s ease-in-out;
-    -ms-transition: background-color .075s ease-in-out, color .075s ease-in-out;
-    transition: background-color .075s ease-in-out, color .075s ease-in-out;
-    position: relative;
-    display: block;
-    text-decoration: none;
-    color: #fff;
-    top: -6px;
-    width: 6em;
-    padding: 0.25em 1.5em 0.25em 1.5em;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-    font-size: 15pt;
-    outline: 0;
-}
-
-#nav li:hover a {
-    background: #6eae73;
-}
-
-#nav li.current a {
-    background: #389e41;
-}
-
-.dropotron {
-    list-style: none;
-    background: #77766b;
-    color: #fff;
-    border-radius: 6px;
-    line-height: 2.75em;
-    text-align: center;
-    font-family: '맑은 고딕';
-    font-weight: 700;
-    padding: 1em 0;
-    text-align: left;
-    min-width: 14em;
-    margin-top: -1em;
-    box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.1);
-}
-
-.dropotron li {
-    padding-left: 0;
-}
-
-.dropotron li>a {
-    display: block;
-    color: #D7DAD8;
-    text-decoration: none;
-    padding: 0 1.25em;
-}
-
-.dropotron li:hover>a,
-.dropotron li:hover>span {
-    color: #fff;
-    background: #7B8780;
-}
-
-
-/* 헤더 영역 끝 */
-
-
-/* 메인페이지 */
-
+/* 로그인 */
 .main {
     background: #fff;
     border-bottom: solid 5px #c1cac5;
@@ -140,10 +10,9 @@ header #logo {
 
 .wrapper {
     overflow: hidden;
-    max-width: 100%%;
+    max-width: 100%;
     max-height: 100%;
     background: #fff;
-    padding: 20px;
 }
 
 .wrapper .djproject{
@@ -302,41 +171,3 @@ header #logo {
     font-weight: 500;
     cursor: pointer;
   }
-
-
-/* 푸터 */
-
-#footer {
-    padding: 4em 0 4em 0;
-    background-color: #f5f5f5;
-    margin-bottom: 2em;
-    display: flex;
-    flex-direction: column;
-}
-
-#footer h2.company {
-    text-align: center;
-    font-size: 2em;
-    color: #77766b;
-    margin: 0 0 1.5em 0;
-}
-
-#footer img {
-    float: left;
-    position: relative;
-    width: 10em;
-    left: 1em;
-}
-
-#footer p {
-    font-size: 1.2em;
-    text-align: left;
-    float: left;
-    margin-left: 3%;
-}
-
-#footer h3 {
-    float: right;
-    font-size: 2em;
-    margin-right: 3%;
-}

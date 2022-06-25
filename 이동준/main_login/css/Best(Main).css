@@ -130,7 +130,7 @@ header #logo {
 /* 배너 */
 #banner {
     position: relative;
-    background-image: url("images/overlay.png"), url("images/overlay.png"), url("images/banner.jpg");
+    background-image: url("../images/overlay.png"), url("../images/overlay.png"), url("../images/banner.jpg");
     background-position: top left, top left, center center;
     background-repeat: repeat, repeat, no-repeat;
     background-size: auto, 50%, cover;
@@ -141,7 +141,7 @@ header #logo {
 #banner .content {
     position: relative;
     background-color: rgba(21, 28, 23, 0.55);
-    background-image: url("images/overlay.png");
+    background-image: url("../images/overlay.png");
     background-position: top left, center center;
     background-size: auto, 100%;
     background-repeat: repeat, no-repeat;
