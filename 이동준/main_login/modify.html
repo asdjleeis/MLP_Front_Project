@@ -50,67 +50,36 @@
         <!--내용-->
         <div class="main">
             <div class="wrapper">
-                <div clas="login">
-                    <!--페이지 구분-->
+                <div class="modify">
                     <div class="djproject">
-                        <div class="title signup">
+                        <div class="title modify">
                             회원정보 수정
                         </div>
                     </div>
+                    <div class="form-inner">
+                        <form action="#" class="modify">
+                            <div class="field">
+                                <input type="idname" placeholder="이름" required>
+                            </div>
+                            <div class="field">
+                                <input type="email" placeholder="이메일 주소" required>
+                            </div>
+                            <div class="field">
+                                <input type="password" placeholder="기존 비밀번호" required>
+                            </div>
+                            <div class="field">
+                                <input type="newpassword" placeholder="새로운 비밀번호" required>
+                            </div>
+                            <div class="field">
+                                <input type="newpasswordcheck" placeholder="새로운 비밀번호 확인" required>
+                            </div>
 
-                    <!--슬라이드 바-->
-                    <div class="slide-container">
-                        <div class="slide-controls">
-                            <input type="radio" name="slide" id="login" checked>
-                            <input type="radio" name="slide" id="signup">
-                            <label for="login" class="slide login">로그인</label>
-                            <label for="signup" class="slide signup">회원가입</label>
-                            <div class="slider-tab"></div>
-                        </div>
-
-                        <!--안에 들어갈 내용-->
-                        <div class="form-inner">
-                            <form action="#" class="login">
-                                <div class="field">
-                                    <input type="idname" placeholder="아이디" required>
-                                </div>
-                                <div class="field">
-                                    <input type="password" placeholder="비밀번호" required>
-                                </div>
-                                <div class="pass-link">
-                                    <a href="#">비밀번호를 잊어버리셨나요?</a>
-                                </div>
-
-                                <!--로그인 버튼-->
-                                <div class="field btn">
-                                    <div class="btn-layer"></div>
-                                    <input type="submit" value="로그인">
-                                </div>
-                                <div class="signup-link">
-                                    아직 회원이 아니신가요? <a href="">지금 회원가입</a>
-                                </div>
-                            </form>
-
-                            <!--회원가입 페이지-->
-                            <form action="#" class="signup">
-                                <div class="field">
-                                    <input type="text" placeholder="이메일 주소" required>
-                                </div>
-                                <div class="field">
-                                    <input type="text" placeholder="아이디" required>
-                                </div>
-                                <div class="field">
-                                    <input type="password" placeholder="비밀번호" required>
-                                </div>
-                                <div class="field">
-                                    <input type="password" placeholder="비밀번호 확인" required>
-                                </div>
-                                <div class="field btn">
-                                    <div class="btn-layer"></div>
-                                    <input type="submit" value="회원가입">
-                                </div>
-                            </form>
-                        </div>
+                            <!--로그인 버튼-->
+                            <div class="field btn">
+                                <div class="btn-layer"></div>
+                                <input type="submit" value="회원정보 수정">
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
