@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/Best(Main).css">
 </head>
 <style>
 div.a {font-size: 30px; font-weight : 900px; color: white;}
@@ -16,48 +17,115 @@ div.c{font-size:12px;}
 
 </style>
 <body>
-    <h1 class="font-color">메뉴별 인기 맛집</h1>
-    <table border="0" width = "100%" height = "744px" cellpadding = 60 cellspacing = 60>
-        <tr align = "center">
-        <p><td background = "img/brunch_list.jpg"  style="background-repeat: no-repeat; background-size: 100% 100%; background-color: rgb(0,0,4);">
-            <div class = "a">2022 브런치 인기 맛집 TOP6</div>
-            <div class ="c"><br></div>
-            <div class = "b">하루의 시작은 브런치로!</div>
-           </td>
-        </p>
-        <p><td background = "img/pizza2_List.jpg" style="background-repeat: no-repeat; background-size: 100% 100%;">
-            <div class = "a">2022 피자 인기 맛집 TOP6</div>
-            <div class = "c"><br></div>
-            <div class = "b">"맛있는 피자 먹고 어깨 피자"</div>
-           </td>
-        </p>
-        <p><td background = "img/sushi_list.jpg" style="background-repeat: no-repeat; background-size: 100% 100%;">
-            <div class = "a">2022 스시 인기 맛집 TOP6</div>
-            <div class = "c"><br></div>
-            <div class = "b">"핫한 스시집 다 모여!"</div>
-           </td>
-        </p>
-        </tr>
+    <div id="wrapping">
+        <!--헤더 영역-->
+        <header>
+            <!--로고-->
+            <a href="Best(Main).html">
+                <img id="logo" src="img/logo.png">
+            </a>
+            <!--네비게이션-->
+            <nav id="nav">
+                <ul>
+                    <li class="current"><a href="Best(Main).html">BEST 맛집</a></li>
+                    <li><a href="region.html">지역별 맛집</a></li>
+                    <li><a href="restaurant_menu.html">메뉴별 맛집</a></li>
+                    <li><a href="tv_recommand.html">TV 추천 맛집</a></li>
+                    <li>
+                        <a href="#">내 계정</a>
+                        <ul>
+                            <li><a href="login.html">로그인/회원가입</a></li>
+                            <li>
+                                <a href="#">마이페이지</a>
+                                <ul>
+                                    <li><a href="modify.html">회원정보수정</a></li>
+                                    <li><a href="#">QnA</a></li>
+                                    <li><a href="#">내가 쓴 리뷰</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-        <tr align = "center">
-            <p><td background = "img/cafe_list.jpg" style="background-repeat: no-repeat; background-size: 100% 100%;">
-                <div class = "a">2022 인기 카페 TOP6</div>
-                <div class = "c"><br></div>
-                <div class = "b">"카공하러 갈 준비 됐나?"</div>
-               </td>
-            </p>
-            <p><td background = "img/sogogi_list.jpg" style="background-repeat: no-repeat; background-size: 100% 100%;">
-                <div class = "a">2022 소고기 인기 맛집 TOP6</div>
-                <div class = "c"><br></div>
-                <div class = "b">"아직도 한우 안먹고 뭐하노?"</div>
+        <!-- 배너 -->
+        <section id="banner">
+            <div class="content" style="line-height: 10px" >
+                <h2>세상 모든 맛집 이곳에 압축!</h2>
+                <p>맛.zip</p>
+                <input id="search" type='text' placeholder='당신의 맛집을 찾아보세요' />
+                <a href="#main" class="button scrolly">검색</a>
+            </div>
+        </section>
+        <!-- 메인 -->
+        <section id ="main">
+            <h1 class="font-color">메뉴별 인기 맛집</h1>
+            <table border="0" width = "100%" height = "744px" cellpadding = 60 cellspacing = 60>
+                <tr align = "center" >
+                <p><td background = "img/brunch_list.jpg"  style="background-repeat: no-repeat; background-size: 100% 100%; background-color: rgb(0,0,4);">
+                    <div class = "a">2022 브런치 인기 맛집 TOP6</div>
+                    <div class ="c"><br></div>
+                    <div class = "b">하루의 시작은 브런치로!</div>
                 </td>
-            </p>
-            <p><td background = "img/pasta_list.jpg" style="background-repeat: no-repeat; background-size: 100% 100%;">
-                <div class = "a">2022 파스타 인기 맛집 TOP6</div>
-                <div class = "c"><br></div>
-                <div class = "b">"핫한 파스타 궁금하다면 주목"</div>
-               </td>
-            </p>
-    </table>
+                </p>
+                <p><td background = "img/pizza2_List.jpg" style="background-repeat: no-repeat; background-size: 100% 100%;">
+                    <div class = "a">2022 피자 인기 맛집 TOP6</div>
+                    <div class = "c"><br></div>
+                    <div class = "b">"맛있는 피자 먹고 어깨 피자"</div>
+                </td>
+                </p>
+                <p><td background = "img/sushi_list.jpg" style="background-repeat: no-repeat; background-size: 100% 100%;">
+                    <div class = "a">2022 스시 인기 맛집 TOP6</div>
+                    <div class = "c"><br></div>
+                    <div class = "b">"핫한 스시집 다 모여!"</div>
+                </td>
+                </p>
+                </tr>
+               
+                <tr align = "center">
+                    <p><td background = "img/cafe_list.jpg" style="background-repeat: no-repeat; background-size: 100% 100%;">
+                        <div class = "a">2022 인기 카페 TOP6</div>
+                        <div class = "c"><br></div>
+                        <div class = "b">"카공하러 갈 준비 됐나?"</div>
+                    </td>
+                    </p>
+                    <p><td background = "img/sogogi_list.jpg" style="background-repeat: no-repeat; background-size: 100% 100%;">
+                        <div class = "a">2022 소고기 인기 맛집 TOP6</div>
+                        <div class = "c"><br></div>
+                        <div class = "b">"아직도 한우 안먹고 뭐하노?"</div>
+                        </td>
+                    </p>
+                    <p><td background = "img/pasta_list.jpg" style="background-repeat: no-repeat; background-size: 100% 100%;">
+                        <div class = "a">2022 파스타 인기 맛집 TOP6</div>
+                        <div class = "c"><br></div>
+                        <div class = "b">"핫한 파스타 궁금하다면 주목"</div>
+                    </td>
+                    </p>
+            </table>
+        </section>
+        <footer id="footer">
+            <section>
+                <h2 class="company">회사소개</h2>
+                <img id="logo" src="img/logo.png">
+                <p>
+                    (주)mat-zip<br>
+                    서울특별시 강남구<br>
+                    대표이사 : 멀티캠퍼스<br>
+                    사업자 등록번호 : 123-45-678900<br>
+                    통신판매업 신고번호 : 2022-서울강남-01779<br>
+                    고객센터 : 02-000-0000<br>
+                    &#169; 2022 Mat.zip Co.Ltd.All rights reserved
+                </p>
+                <h3>한국어 | English | &#20013;&#25991;</h3>
+            </section>
+        </footer>
+       
+    </div>
+    <!--자바스크립트-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.dropotron.min.js"></script>
+    <script src="js/breakpoints.min.js"></script>
+    <script src="js/main.js"></script>   
 </body>
 </html>
