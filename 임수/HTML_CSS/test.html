@@ -8,7 +8,35 @@
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="testCss.css">
 </head>
-
+<header>
+  <!--로고-->
+  <a href="main.html">
+      <img id="logo" src="./images/logo.png">
+  </a>
+  <!--네비게이션-->
+  <nav id="nav">
+      <ul>
+          <li class="current"><a href="main.html">BEST 맛집</a></li>
+          <li><a href="region.html">지역별 맛집</a></li>
+          <li><a href="restaurant_menu.html">메뉴별 맛집</a></li>
+          <li><a href="tv_recommand.html">TV 추천 맛집</a></li>
+          <li>
+              <a href="#">내 계정</a>
+              <ul>
+                  <li><a href="login.html">로그인/회원가입</a></li>
+                  <li>
+                      <a href="#">마이페이지</a>
+                      <ul>
+                          <li><a href="modify.html">회원정보수정</a></li>
+                          <li><a href="#">QnA</a></li>
+                          <li><a href="#">내가 쓴 리뷰</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+  </nav>
+</header>
 <body>
   <div id="header">
     <p> 14,266 클릭 | 2022-01-07 </p>
@@ -89,3 +117,7 @@
 </body>
 
 </html>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/jquery.dropotron.min.js"></script>
+<script src="./js/breakpoints.min.js"></script>
+<script src="./js/main.js"></script>
