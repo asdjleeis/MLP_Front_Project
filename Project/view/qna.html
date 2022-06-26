@@ -56,6 +56,8 @@
   </nav>
 </header>
 <body>
+    <div id="qnalist">
+        <h1> 많이 질문하시는 것들</h1>
   <ul class="qna">
     <li>
         <input type="checkbox" id="qna-1">
@@ -99,9 +101,10 @@
         </div>
     </li>
 </ul>
+</div>
 <div>
   <input id="lectureId" name="lectureId" type="hidden" value="">
-	<h3>QNA</h3>
+	<h3 style="text-align: center;">QNA</h3>
 	
 	<br>
 	<form action="register" method="post" onsubmit="return beforeSubmit();">
@@ -153,3 +156,14 @@
 <script src="../js/breakpoints.min.js"></script>
 <script src="../js/main.js"></script>
 
+<style>
+#qnalist {
+    width: 1200px;
+    margin: auto;
+}
+
+.table {
+    width: 1200px;
+    margin: auto;
+}
+</style>
