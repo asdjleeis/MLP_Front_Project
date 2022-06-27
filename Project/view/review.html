@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>세상모든 맛집 다모아! Mat.zip</title>
   <link rel="stylesheet" href="../css/Best(Main).css">
+  <link rel="stylesheet" href="../css/review.css">
 </head>
 <header>
   <!--로고-->
@@ -37,7 +38,65 @@
   </nav>
 </header>
 <body>
-  
+    <div id="reviewDiv">
+        <div id="reviewWrite">
+          <h1> 리뷰 작성</h1>
+          <input type="text" placeholder="작성자명" id="reviewWriter"> <br>
+          <textarea id="reviewContent"></textarea> <br>
+          <button> 작성하기 </button>
+        </div>
+        <table>
+          <tr>
+            <td>
+              리뷰(3)
+            </td>
+            <td id="reviewSort">
+            </td>
+          </tr>
+          <tr>
+            <td id="username">
+              라이온킹
+            </td>
+            <td id="userReview">
+              맛있게 한데 이렇게 유명할 일? 줄서서먹을 맛은 절대 아님둥...도우가 쫄깃쫄깃 진짜 맛있었고
+              가지가지 한국식 가지볶음 말고는 중국가지튀김부터 가지들어간 이태리 음식도 좋아해 맛있었던 가지요리 ㅋㅋ
+              우리가 시키고 딱 품절되어 더 좋았던^^ 나쁜마음 호수공원 산책하고 가기 좋을듯함
+            </td>
+            <td>
+                <button id="reviewUD">수정</button>
+                <button id="reviewUD">삭제</button>
+            </td>
+
+          </tr>
+          <tr>
+            <td id="username">
+                라이온킹
+            </td>
+            <td id="userReview">
+              카프레제 샐러드 페스토파스타 비스마르크 다다다다 맛있땅
+            </td>
+            <td>
+                <button id="reviewUD">수정</button>
+                <button id="reviewUD">삭제</button>
+            </td>
+          </tr>
+          <tr>
+            <td id="username">
+                라이온킹
+            </td>
+            <td id="userReview">
+              초심을 잃으신듯. 유명해지기 전부터 갔던 맛집이라 오랜만에 갔는데 너무 실망이에요.
+              피자바닥 다 태워나와서 이야기 했더니 사장이 " 다시 해드려요? 근데 다시해도 똑같이 나올 수 있어요"....
+              초기에 친절했던 사장도 음식맛과 같이 변했네요 
+              피자도 짜 샐러드에 도우도 짜. 소금 덩어리에 스파게티는 설탕 덩어리 ㅋ
+            </td>
+            <td>
+                <button id="reviewUD">수정</button>
+                <button id="reviewUD">삭제</button>
+            </td>
+          </tr>
+        </table>
+      </div>
 </body>
 <footer id="footer">
   <section>
